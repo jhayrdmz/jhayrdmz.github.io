@@ -1,0 +1,22 @@
+/* Project detail pages — standalone, no JS */
+:root { --extra-color: #f26b38; --bg: #26262d; --panel: #31313a; --text: #a2a2a6; --heading: #f0f0f0; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: 'Roboto Mono', monospace; font-size: 15px; line-height: 1.8; }
+a { color: var(--extra-color); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 80px; }
+.top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 60px; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; }
+.top .brand { color: var(--heading); font-weight: 700; }
+h1 { color: var(--heading); font-size: 40px; line-height: 1.2; text-transform: uppercase; letter-spacing: .04em; margin: 0 0 10px; }
+h2 { color: var(--heading); font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: .04em; margin: 50px 0 15px; padding-left: 12px; border-left: 2px solid var(--extra-color); }
+.subtitle { margin: 0 0 30px; }
+.cover, .gallery img { display: block; width: 100%; height: auto; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.details { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 8px 20px; }
+.details strong { color: var(--extra-color); font-weight: 400; }
+.tags span { display: inline-block; margin: 0 6px 6px 0; padding: 0 8px; font-size: 12px; border: 1px solid var(--extra-color); color: var(--extra-color); }
+.btn { display: inline-block; margin-top: 40px; padding: 8px 22px; border: 1px solid var(--extra-color); color: var(--heading); text-transform: uppercase; font-size: 13px; letter-spacing: .04em; }
+.btn:hover { background: var(--extra-color); text-decoration: none; }
+.pager { display: flex; justify-content: space-between; margin-top: 60px; padding-top: 20px; border-top: 1px solid #3a3a44; font-size: 13px; }
+footer { margin-top: 40px; font-size: 11px; color: #777; }
+@media (max-width: 600px) { h1 { font-size: 28px; } .top { margin-bottom: 40px; } }

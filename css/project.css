@@ -5,7 +5,8 @@ body { margin: 0; background: var(--bg); color: var(--text); font-family: 'Robot
 a { color: var(--extra-color); text-decoration: none; }
 a:hover { text-decoration: underline; }
 .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 80px; }
-.top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 60px; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; }
+.top { position: sticky; top: 12px; z-index: 100; display: flex; justify-content: space-between; align-items: center; margin-bottom: 60px; padding: 12px 20px; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; border: 1px solid transparent; border-radius: 24px; background: transparent; transition: background-color .25s ease, border-color .25s ease, box-shadow .25s ease; }
+.top.is-stuck { border-color: rgba(255, 255, 255, .08); background: rgba(49, 49, 58, .75); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); box-shadow: 0 10px 30px rgba(0, 0, 0, .25); }
 .top .brand { color: var(--heading); font-weight: 700; }
 h1 { color: var(--heading); font-size: 40px; line-height: 1.2; text-transform: uppercase; letter-spacing: .04em; margin: 0 0 10px; }
 h2 { color: var(--heading); font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: .04em; margin: 50px 0 15px; padding-left: 12px; border-left: 2px solid var(--extra-color); }
@@ -19,4 +20,9 @@ h2 { color: var(--heading); font-size: 13px; font-weight: 500; text-transform: u
 .btn:hover { background: var(--extra-color); text-decoration: none; }
 .pager { display: flex; justify-content: space-between; margin-top: 60px; padding-top: 20px; border-top: 1px solid #3a3a44; font-size: 13px; }
 footer { margin-top: 40px; font-size: 11px; color: #777; }
-@media (max-width: 600px) { h1 { font-size: 28px; } .top { margin-bottom: 40px; } }
+@media (max-width: 600px) { h1 { font-size: 28px; } .top { margin-bottom: 40px; padding: 10px 16px; font-size: 12px; } }
+
+/* Scroll to top button */
+.scroll-top { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); z-index: 200; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border: 1px solid rgba(255, 255, 255, .08); border-radius: 50%; background: rgba(49, 49, 58, .75); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); box-shadow: 0 10px 30px rgba(0, 0, 0, .25); color: var(--heading); cursor: pointer; opacity: 0; visibility: hidden; transform: translateY(10px); transition: opacity .25s ease, transform .25s ease, visibility .25s, background-color .2s ease; }
+.scroll-top.is-visible { opacity: 1; visibility: visible; transform: none; }
+.scroll-top:hover { background: var(--extra-color); }

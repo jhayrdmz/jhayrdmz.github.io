@@ -17,13 +17,14 @@ fonts/         Web fonts
 
 ## Run locally
 
-It's a static site, so you can serve it with any local web server:
+Requires [Node.js](https://nodejs.org).
 
 ```bash
-python3 -m http.server 8000
+npm install
+npm run dev
 ```
 
-Then open http://localhost:8000.
+This opens the site at http://localhost:3000 and watches for changes. The page reloads automatically when you edit any HTML, CSS, JS or image file.
 
 ## Deploy
 

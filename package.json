@@ -1,0 +1,11 @@
+{
+  "name": "jhayrdmz.github.io",
+  "private": true,
+  "description": "JR Hugo's personal website and portfolio",
+  "scripts": {
+    "dev": "browser-sync start --server --files \"*.html, projects/*.html, css/*.css, js/*.js, images/**/*\" --port 3000 --no-notify --no-ui"
+  },
+  "devDependencies": {
+    "browser-sync": "3.0.4"
+  }
+}

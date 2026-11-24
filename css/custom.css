@@ -75,3 +75,9 @@ header{transition:all .6s ease 0s}header.active{opacity:1!important;visibility:v
     box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
   }
 }
+
+/* About section social links (above Download CV) */
+.about-soc{display:flex;gap:12px;margin:-12px 0 30px}
+.about-soc a{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid #666;border-radius:50%;color:#f0f0f0;text-decoration:none;transition:color .3s ease,border-color .3s ease,background-color .3s ease}
+.about-soc a .ion{font-size:18px;line-height:1}
+.about-soc a:hover,.about-soc a:focus-visible{color:#fff;border-color:var(--extra-color);background:var(--extra-color);outline:none}

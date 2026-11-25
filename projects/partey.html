@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Partey - JR Hugo</title>
+  <meta name="description" content="A real-time multiplayer party game platform. Games on the big screen, played on your phone. A project by JR Hugo, Web Developer." />
+  <link rel="canonical" href="https://jhayrdmz.github.io/projects/partey.html" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="JR Hugo - Web Developer" />
+  <meta property="og:title" content="Partey - JR Hugo" />
+  <meta property="og:description" content="A real-time multiplayer party game platform. Games on the big screen, played on your phone. A project by JR Hugo, Web Developer." />
+  <meta property="og:url" content="https://jhayrdmz.github.io/projects/partey.html" />
+  <meta property="og:image" content="https://jhayrdmz.github.io/images/projects/partey/partey-landing.jpg" />
+  <meta property="og:image:width" content="1440" />
+  <meta property="og:image:height" content="900" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:alt" content="Partey landing page with Host a Game and Game Display options" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Partey - JR Hugo" />
+  <meta name="twitter:description" content="A real-time multiplayer party game platform. Games on the big screen, played on your phone. A project by JR Hugo, Web Developer." />
+  <meta name="twitter:image" content="https://jhayrdmz.github.io/images/projects/partey/partey-landing.jpg" />
+  <meta name="twitter:image:alt" content="Partey landing page with Host a Game and Game Display options" />
+  <link rel="shortcut icon" href="../favicon.png" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/project.css" />
+</head>
+<body>
+  <div class="wrap">
+    <nav class="top">
+      <a class="brand" href="../index.html">JR Hugo</a>
+      <a href="../index.html#section-portfolio">&larr; Back to Portfolio</a>
+    </nav>
+
+    <h1>Partey</h1>
+    <p class="subtitle">A real-time multiplayer party game platform. Games on the big screen, played on your phone.</p>
+
+    <img class="cover" src="../images/projects/partey/partey-cover.jpg" alt="Partey cover" />
+
+    <h2>Overview</h2>
+    <p>Partey turns any room into a game night. One device hosts, a TV or tablet becomes the shared display, and everyone plays on their own phone. Nothing to install and no accounts needed. The host creates a room, picks a game mode and a lineup of games, then pairs the display with a 6-digit code. Players join by scanning a QR code or typing the room code, choose a nickname and avatar, and compete for the crown. Speed Quiz, Guess the Majority and Reflex Battle are playable today, with more games on the way.</p>
+
+    <h2>Details</h2>
+    <ul class="details">
+      <li><strong>Client:</strong> Personal Project</li>
+      <li><strong>Role:</strong> Solo Developer</li>
+      <li><strong>Year:</strong> 2026</li>
+      <li><strong>Type:</strong> Web App (Real-time Multiplayer)</li>
+    </ul>
+
+    <h2>Tech Stack</h2>
+    <div class="tags">
+      <span>React</span><span>TypeScript</span><span>Vite</span><span>Tailwind CSS</span><span>shadcn/ui</span><span>Zustand</span><span>Firebase</span><span>Cloud Functions</span><span>Playwright</span>
+    </div>
+
+    <h2>My Contributions</h2>
+    <ul>
+      <li>Designed and built the platform end to end, with separate host, display and player experiences</li>
+      <li>Built a server-authoritative game engine on Cloud Functions with synced round timers, live answer counts, pause and resume, and tournament scoring</li>
+      <li>Implemented secure display pairing with single-use, expiring, rate-limited codes that the host approves</li>
+      <li>Handled player presence and reconnection with Realtime Database, plus automatic room expiry and cleanup</li>
+      <li>Locked down data access with Firestore and Realtime Database security rules</li>
+      <li>Covered the system with unit, security-rules and multi-device end-to-end tests</li>
+    </ul>
+
+    <h2>Screenshots</h2>
+    <div class="gallery">
+      <img src="../images/projects/partey/partey-landing.jpg" alt="Partey landing page with Host a Game and Game Display options" loading="lazy" />
+      <img src="../images/projects/partey/partey-host-and-player.jpg" alt="Partey on phones: host creating a room and player entering a room code" loading="lazy" />
+      <img src="../images/projects/partey/partey-display-pairing.jpg" alt="Partey display pairing screen for a TV or monitor" loading="lazy" />
+    </div>
+
+    <a class="btn" href="https://github.com/jhayrdmz/partey" target="_blank" rel="noopener">View on GitHub</a>
+
+    <div class="pager">
+      <a href="mustard-leadership.html">&larr; Mustard Leadership</a>
+      <a href="coach-chief.html">Coach Chief &rarr;</a>
+    </div>
+
+    <footer>&copy; 2026 JR Hugo. All rights reserved.</footer>
+  </div>
+  <script src="../js/scroll-top.js"></script>
+  <script src="../js/lightbox.js"></script>
+</body>
+</html>

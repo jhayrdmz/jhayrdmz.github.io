@@ -39,7 +39,7 @@
     <img class="cover" src="../images/projects/partey/partey-cover.jpg" alt="Partey cover" />
 
     <h2>Overview</h2>
-    <p>Partey turns any room into a game night. One device hosts, a TV or tablet becomes the shared display, and everyone plays on their own phone. Nothing to install and no accounts needed. The host creates a room, picks a game mode and a lineup of games, then pairs the display with a 6-digit code. Players join by scanning a QR code or typing the room code, choose a nickname and avatar, and compete for the crown. Speed Quiz, Guess the Majority and Reflex Battle are playable today, with more games on the way.</p>
+    <p>Partey turns any room into a game night. One device hosts, a TV or tablet becomes the shared display, and everyone plays on their own phone. Nothing to install and no accounts needed. The host creates a room, picks a game mode and a lineup of games, then pairs the display with a 6-digit code. Players join by scanning a QR code or typing the room code, choose a nickname and avatar, and compete for the crown. Speed Quiz, Guess the Majority, Reflex Battle, The Impostor and Draw &amp; Guess are playable today, with more games on the way.</p>
 
     <h2>Details</h2>
     <ul class="details">
@@ -51,7 +51,7 @@
 
     <h2>Tech Stack</h2>
     <div class="tags">
-      <span>React</span><span>TypeScript</span><span>Vite</span><span>Tailwind CSS</span><span>shadcn/ui</span><span>Zustand</span><span>Firebase</span><span>Cloud Functions</span><span>Playwright</span>
+      <span>React</span><span>TypeScript</span><span>Vite</span><span>Tailwind CSS</span><span>shadcn/ui</span><span>Zustand</span><span>Motion</span><span>Firebase</span><span>Cloud Functions</span><span>Playwright</span>
     </div>
 
     <h2>My Contributions</h2>
@@ -61,16 +61,19 @@
       <li>Implemented secure display pairing with single-use, expiring, rate-limited codes that the host approves</li>
       <li>Handled player presence and reconnection with Realtime Database, plus automatic room expiry and cleanup</li>
       <li>Locked down data access with Firestore and Realtime Database security rules</li>
-      <li>Covered the system with unit, security-rules and multi-device end-to-end tests</li>
+      <li>Covered the system with unit, security-rules and multi-device end-to-end tests, including full games of every playable mode</li>
     </ul>
 
     <h2>Screenshots</h2>
     <div class="gallery">
+      <img src="../images/projects/partey/partey-how-it-works.jpg" alt="How Partey works: the host runs the room, the display shows the game on the TV, and players join on their phones" loading="lazy" />
       <img src="../images/projects/partey/partey-landing.jpg" alt="Partey landing page with Host a Game and Game Display options" loading="lazy" />
-      <img src="../images/projects/partey/partey-host-and-player.jpg" alt="Partey on phones: host creating a room and player entering a room code" loading="lazy" />
+      <img src="../images/projects/partey/partey-host-lobby.jpg" alt="Partey host lobby on a tablet with 10 players connected and a four-game tournament lineup" loading="lazy" />
+      <img src="../images/projects/partey/partey-player-speed-quiz.jpg" alt="A player's phone during Speed Quiz with the question, a timer and four answer tiles" loading="lazy" />
       <img src="../images/projects/partey/partey-display-pairing.jpg" alt="Partey display pairing screen for a TV or monitor" loading="lazy" />
     </div>
 
+    <a class="btn" href="https://joinpartey.com/" target="_blank" rel="noopener">View Live Project</a>
     <a class="btn" href="https://github.com/jhayrdmz/partey" target="_blank" rel="noopener">View on GitHub</a>
 
     <div class="pager">
